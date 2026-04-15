@@ -66,8 +66,11 @@
                         <option>College</option>
                     </select>
                 </div>
+                <div>
+                    <button class="button-primary" type="button">Register</button>
+                </div>
             </div>
-            <button class="button-primary" type="button">Register</button>
+            
             <p class="subtitle" style="margin-top: 16px;"><!-- TODO: Add a welcome or hero image for the dashboard here -->
             </p>
         </div>
