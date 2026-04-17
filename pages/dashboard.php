@@ -27,49 +27,52 @@
         <div class="card">
             <div class="grid-2">
                 <div>
-                    <h3>Registration Form</h3>
-                    <p class="subtitle">Fill out the form carefully for registration.</p>
+                    <div class="card" style="position: relative;">
+                        <img src="logo.png" style="position:absolute; top:20px; right:20px; width:80px; height:auto;">
+                        <div class="grid-2">
+                            <h3>Registration Form</h3>
+                            <p class="subtitle">Fill out the form carefully for registration.</p>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div>
+                            <label class="label">First Name</label>
+                            <input type="text" placeholder="First Name...">
+                        </div>
+                        <div>
+                            <label class="label">Last Name</label>
+                            <input type="text" placeholder="Last Name...">
+                        </div>
+                        <div>
+                            <label class="label">Student ID</label>
+                            <input type="text" placeholder="example 17-03030">
+                        </div>
+                        <div>
+                            <label class="label">Email</label>
+                            <input type="email" placeholder="example juandc@gmail.com">
+                        </div>
+                        <div>
+                            <label class="label">Gender</label>
+                            <select>
+                                <option>Please Select...</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="label">Department</label>
+                            <select>
+                                <option>Please Select...</option>
+                                <option>Elementary</option>
+                                <option>Junior High</option>
+                                <option>Senior High</option>
+                                <option>College</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="button-primary" type="button">Register</button>
+                    <p class="subtitle" style="margin-top: 16px;"><!-- TODO: Add a welcome or hero image for the dashboard here -->
+                    </p>
                 </div>
             </div>
-            <div class="form-grid">
-                <div>
-                    <label class="label">First Name</label>
-                    <input type="text" placeholder="First Name...">
-                </div>
-                <div>
-                    <label class="label">Last Name</label>
-                    <input type="text" placeholder="Last Name...">
-                </div>
-                <div>
-                    <label class="label">Student ID</label>
-                    <input type="text" placeholder="example 17-03030">
-                </div>
-                <div>
-                    <label class="label">Email</label>
-                    <input type="email" placeholder="example juandc@gmail.com">
-                </div>
-                <div>
-                    <label class="label">Gender</label>
-                    <select>
-                        <option>Please Select...</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="label">Department</label>
-                    <select>
-                        <option>Please Select...</option>
-                        <option>Elementary</option>
-                        <option>Junior High</option>
-                        <option>Senior High</option>
-                        <option>College</option>
-                    </select>
-                </div>
-            </div>
-            <button class="button-primary" type="button">Register</button>
-            <p class="subtitle" style="margin-top: 16px;"><!-- TODO: Add a welcome or hero image for the dashboard here -->
-            </p>
-        </div>
-    </div>
 </section>
