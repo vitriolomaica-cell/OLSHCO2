@@ -1,6 +1,11 @@
 <?php
+require_once __DIR__ . '/config/dbconnect.php';
+
+$role = $_SESSION['role'] ?? 'student';
+
 $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
-$allowed = ['dashboard', 'posting', 'calendar', 'events', 'contacts', 'academic_offerings'];
+$allowed = ['dashboard', 'posting', 'calendar', 'events', 'contacts', 'academic_offerings', 'testing'];
+
 if (!in_array($page, $allowed, true)) {
     $page = 'dashboard';
 }
