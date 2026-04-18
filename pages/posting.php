@@ -29,28 +29,36 @@
                 </div>
                 <div class="announcement-grid announcement-highlight-grid">
                     <article class="announcement-card">
-                        <div class="announcement-image"><!-- TODO: Add Preschool & Grade School image --></div>
+                        <div class="announcement-image">
+                            <img src="assets/images/ELEM.jpg" alt="Preschool & Grade School" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                        </div>
                         <div class="announcement-copy">
                             <h3>Preschool & Grade School</h3>
                             <p class="announcement-subtitle">Nursery to Grade 6</p>
                         </div>
                     </article>
                     <article class="announcement-card">
-                        <div class="announcement-image"><!-- TODO: Add Junior High School image --></div>
+                        <div class="announcement-image">
+                            <img src="assets/images/JUNIORHIGH_2.jpg" alt="Junior High School" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                        </div>
                         <div class="announcement-copy">
                             <h3>Junior High School</h3>
                             <p class="announcement-subtitle">Grade 7 to Grade 10</p>
                         </div>
                     </article>
                     <article class="announcement-card">
-                        <div class="announcement-image"><!-- TODO: Add Senior High School image --></div>
+                        <div class="announcement-image">
+                            <img src="assets/images/seniorhigh.jpg" alt="Senior High School" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                        </div>
                         <div class="announcement-copy">
                             <h3>Senior High School</h3>
                             <p class="announcement-subtitle">Grade 11 to Grade 12<br>[STEM, ABM, HUMSS, TVL-ICT]</p>
                         </div>
                     </article>
                     <article class="announcement-card">
-                        <div class="announcement-image"><!-- TODO: Add College image --></div>
+                        <div class="announcement-image">
+                            <img src="assets/images/college.jpg" alt="College" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                        </div>
                         <div class="announcement-copy">
                             <h3>College</h3>
                             <p class="announcement-subtitle">BEED, BSED, BTLED, BECE, BSCRIM, BSOAD, BSHM, BSIT</p>
@@ -63,23 +71,39 @@
         <div class="view-section event-view active">
             <div class="announcement-grid event-grid">
                 <article class="announcement-card">
-                    <div class="announcement-image"><!-- TODO: Add Elementary Event image --></div>
-                    <h3>Elementary Events</h3>
+                    <div class="announcement-image">
+                        <img src="assets/images/ELEM.jpg" alt="Elementary Announcements" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                    </div>
+                    <div style="background: rgba(76, 7, 7, 0.95); padding: 12px 16px; border-radius: 12px; margin: 12px; text-align: center;">
+                        <h3 style="color: #fff; font-size: 1.1rem; margin: 0;">Elementary Announcements</h3>
+                    </div>
                     <button class="see-details-btn">See Details</button>
                 </article>
                 <article class="announcement-card">
-                    <div class="announcement-image"><!-- TODO: Add Junior High Event image --></div>
-                    <h3>Junior High Events</h3>
+                    <div class="announcement-image">
+                        <img src="assets/images/JUNIORHIGH_2.jpg" alt="Junior High Announcements" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                    </div>
+                    <div style="background: rgba(76, 7, 7, 0.95); padding: 12px 16px; border-radius: 12px; margin: 12px; text-align: center;">
+                        <h3 style="color: #fff; font-size: 1.1rem; margin: 0;">Junior High Announcements</h3>
+                    </div>
                     <button class="see-details-btn">See Details</button>
                 </article>
                 <article class="announcement-card">
-                    <div class="announcement-image"><!-- TODO: Add Senior High Event image --></div>
-                    <h3>Senior High Events</h3>
+                    <div class="announcement-image">
+                        <img src="assets/images/SENIORHIGH.jpg" alt="Senior High Announcements" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                    </div>
+                    <div style="background: rgba(76, 7, 7, 0.95); padding: 12px 16px; border-radius: 12px; margin: 12px; text-align: center;">
+                        <h3 style="color: #fff; font-size: 1.1rem; margin: 0;">Senior High Announcements</h3>
+                    </div>
                     <button class="see-details-btn">See Details</button>
                 </article>
                 <article class="announcement-card">
-                    <div class="announcement-image"><!-- TODO: Add College Event image --></div>
-                    <h3>College Events</h3>
+                    <div class="announcement-image">
+                        <img src="assets/images/college.jpg" alt="College Announcements" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                    </div>
+                    <div style="background: rgba(76, 7, 7, 0.95); padding: 12px 16px; border-radius: 12px; margin: 12px; text-align: center;">
+                        <h3 style="color: #fff; font-size: 1.1rem; margin: 0;">College Announcements</h3>
+                    </div>
                     <button class="see-details-btn">See Details</button>
                 </article>
             </div>
@@ -92,13 +116,17 @@
                 <article class="announcement-post">
                     <h4>First Friday Mass</h4>
                     <p class="post-meta">April 3, 2026 - 7:30 am</p>
-                    <div class="post-image"><!-- TODO: Add First Friday Mass image --></div>
+                    <div class="post-image">
+                        <img src="assets/images/ffmass.jpg" alt="First Friday Mass" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                    </div>
                     <button class="see-details-btn">See Details</button>
                 </article>
                 <article class="announcement-post">
                     <h4>Student Achievement Day</h4>
                     <p class="post-meta">March 26, 2026</p>
-                    <div class="post-image"><!-- TODO: Add Student Achievement Day image --></div>
+                    <div class="post-image">
+                        <img src="assets/images/crim.jpg" alt="Student Achievement Day" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                    </div>
                     <button class="see-details-btn">See Details</button>
                 </article>
             </div>

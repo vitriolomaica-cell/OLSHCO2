@@ -11,7 +11,7 @@ $nav = [
 ?>
 <aside class="sidebar">
     <div class="brand">
-        <img src="assets/images/logo.png" alt="OLSHCO logo" class="brand-logo-image">
+        <img src="assets/images/logo.jpeg" alt="OLSHCO logo" class="brand-logo-image">
         <div class="brand-logo">OLSHCO</div>
     </div>
     <nav class="sidebar-nav">
