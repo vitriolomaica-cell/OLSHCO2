@@ -2,9 +2,9 @@
 $currentPage = $page ?? 'dashboard';
 $nav = [
     'dashboard' => 'Dashboard',
-    'posting' => 'Posting',
+    'posting' => 'Announcements & Events',
     'calendar' => 'Calendar',
-    'events' => 'Events',
+    'events' => 'Posting',
     'academic_offerings' => 'Academic Offerings',
     'contacts' => 'Contacts',
 ];

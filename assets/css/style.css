@@ -1375,6 +1375,15 @@ body.dark .posting-content::-webkit-scrollbar-thumb {
     border: 1px solid var(--border);
 }
 
+.event-pill-img {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-right: 14px;
+    flex-shrink: 0;
+}
+
 .event-pill strong {
     font-size: 0.98rem;
 }
