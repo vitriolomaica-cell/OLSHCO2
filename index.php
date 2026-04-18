@@ -1,6 +1,6 @@
 <?php
 $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
-$allowed = ['dashboard', 'posting', 'calendar', 'events', 'contacts', 'academic_offerings'];
+$allowed = ['dashboard', 'home', 'posting', 'calendar', 'events', 'contacts', 'academic_offerings'];
 if (!in_array($page, $allowed, true)) {
     $page = 'dashboard';
 }

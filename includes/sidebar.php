@@ -1,6 +1,7 @@
 <?php
 $currentPage = $page ?? 'dashboard';
 $nav = [
+    'home' => 'Home',
     'dashboard' => 'Dashboard',
     'posting' => 'Announcements & Events',
     'calendar' => 'Calendar',

@@ -64,7 +64,7 @@
                 <div class="event-list-item">
                     <span class="event-dot"></span>
                     <div>
-                        <strong>BIRTHDAY NI KY</strong>
+                        <strong>DEFENSE DAY</strong>
                     </div>
                 </div>
             </div>
