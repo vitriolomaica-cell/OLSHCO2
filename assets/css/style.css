@@ -144,25 +144,12 @@ button, input, select, textarea {
     text-decoration: none;
     color: var(--text);
     background: transparent;
-    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
-}
-
-.nav-link {
-    display: inline-flex;
-    align-items: center;
-    padding: 14px 18px;
-    border-radius: 18px;
-    text-decoration: none;
-    color: var(--text);
-    background: transparent;
     transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .nav-link:hover {
-    background: rgba(255,255,255,0.17);
-    color: var(--accent-strong);
-    transform: translateX(4px);
-    box-shadow: 0 18px 50px rgba(0,0,0,0.08);
+    background-color: #ffd657;
+    color: #a31b1f;
 }
 
 .nav-link.active {
@@ -170,6 +157,11 @@ button, input, select, textarea {
     color: var(--accent-strong);
     transform: none;
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.16);
+}
+
+.nav-link.active:hover {
+    background-color: #ffd657;
+    color: #000;
 }
 
 .sidebar-footer {
@@ -503,8 +495,8 @@ body.dark .calendar-panel {
 
 .month-item.active,
 .month-item:hover {
-    background: rgba(255,255,255,0.24);
-    color: #fff;
+    background: #ffd166;
+    color: #000;
 }
 
 .month-item.active {
@@ -757,7 +749,8 @@ body.dark .event-list-item {
 }
 
 .posting-tab:hover {
-    color: var(--accent-strong);
+    color: #ffd657;
+    background: rgba(255,214,87,0.15);
 }
 
 .posting-tab {
@@ -778,7 +771,8 @@ body.dark .event-list-item {
 }
 
 .posting-tab:hover {
-    color: var(--accent-strong);
+    color: #ffd657;
+    background: rgba(255,214,87,0.15);
 }
 
 .new-post-btn {
@@ -850,7 +844,8 @@ body.dark .event-list-item {
 
 .announcement-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 36px 90px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 36px 90px rgba(255, 214, 87, 0.25);
+    border-color: #ffd657;
 }
 
 .announcement-image {
@@ -1215,6 +1210,8 @@ body.dark .posting-content::-webkit-scrollbar-thumb {
 }
 
 .button-primary:hover {
+    background: #ffd657;
+    color: #000;
     transform: translateY(-1px);
 }
 
@@ -1376,6 +1373,15 @@ body.dark .posting-content::-webkit-scrollbar-thumb {
     border-radius: 18px;
     background: rgba(255,255,255,0.82);
     border: 1px solid var(--border);
+}
+
+.event-pill-img {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-right: 14px;
+    flex-shrink: 0;
 }
 
 .event-pill strong {
