@@ -1,13 +1,13 @@
 <?php
 require_once __DIR__ . '/config/dbconnect.php';
 
-$role = $_SESSION['role'] ?? 'student';
+$role = $_SESSION['role'] ?? 'faculty';
 
 $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
-$allowed = ['dashboard', 'posting', 'calendar', 'events', 'contacts', 'academic_offerings', 'testing'];
+$allowed = ['auth', 'dashboard', 'posting', 'calendar', 'events', 'contacts', 'academic_offerings', 'testing'];
 
 if (!in_array($page, $allowed, true)) {
-    $page = 'dashboard';
+    $page = 'auth';
 }
 ?>
 <!DOCTYPE html>
@@ -18,6 +18,7 @@ if (!in_array($page, $allowed, true)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OLSHCO Digital Hub</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
     <link href="https://github.githubassets.com/assets/mona-sans-c6a8f8da.woff2" rel="preload" as="font" type="font/woff2" crossOrigin="anonymous">
 </head>
 

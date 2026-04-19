@@ -1,25 +1,36 @@
 <?php
-$currentPage = $page ?? 'dashboard';
-$nav = [
-    'dashboard' => [
-        'label' => 'Dashboard',
-        'roles' => ['student', 'faculty', 'admin']
-    ],
-    'posting' => [
-        'label' => 'Posting',
-        'roles' => ['student', 'faculty', 'admin']
-    ],
-    'calendar' => [
-        'label' => 'Calendar',
-        'roles' => ['student', 'faculty', 'admin']
-    ],
-    'events' => [
-        'roles' => ['student', 'faculty', 'admin']
-    ]'Events',
-    'academic_offerings' => 'Academic Offerings',
-    'contacts' => 'Contacts',
-    'testing' => 'Testing',
-];
+    $currentPage = $page ?? 'dashboard';
+    $nav = [
+        'dashboard' => [
+            'label' => 'Dashboard',
+            'roles' => ['faculty', 'admin']
+        ],
+        'posting' => [
+            'label' => 'Posting',
+            'roles' => ['faculty', 'admin']
+        ],
+        'calendar' => [
+            'label' => 'Calendar',
+            'roles' => ['student', 'faculty', 'admin']
+        ],
+        'events' => [
+            'label' => 'Events',
+            'roles' => ['student', 'faculty', 'admin']
+        ],
+        'academic_offerings' => [
+            'label' => 'Academic Offerings',
+            'roles' => ['student', 'faculty', 'admin']
+        ],
+        'contacts' => [
+            'label' => 'Contacts',
+            'roles' => ['student', 'faculty', 'admin']
+        ],
+        'auth' => [ 
+            'label' => 'Auth',
+            'roles' => ['student', 'faculty', 'admin']
+        ],
+    ];
+
 ?>
 <aside class="sidebar">
     <div class="brand">

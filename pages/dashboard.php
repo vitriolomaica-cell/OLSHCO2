@@ -31,41 +31,43 @@
                     <h3>Registration Form</h3>
                     <p class="subtitle">Fill out the form carefully for registration.</p>
                 </div>
+                <form action="">
                 <div class="form-grid">
                     <div>
                         <label class="label">First Name</label>
-                        <input type="text" placeholder="First Name...">
+                        <input name="" type="text" placeholder="First Name...">
                     </div>
                     <div>
                         <label class="label">Last Name</label>
-                        <input type="text" placeholder="Last Name...">
+                        <input name="" type="text" placeholder="Last Name...">
                     </div>
                     <div>
                         <label class="label">Student ID</label>
-                        <input type="text" placeholder="example 17-03030">
+                        <input name="" type="text" placeholder="example 17-03030">
                     </div>
                     <div>
                         <label class="label">Email</label>
-                        <input type="email" placeholder="example juandc@gmail.com">
+                        <input name="" type="email" placeholder="example juandc@gmail.com">
                     </div>
                     <div>
-                        <label class="label">Gender</label>
+                        <label class="label">Sex</label>
                         <select>
-                            <option>Please Select...</option>
-                            <option>Male</option>
-                            <option>Female</option>
+                            <option hidden>Please Select...</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
                         </select>
                     </div>
                     <div>
                         <label class="label">Department</label>
                         <select>
-                            <option>Please Select...</option>
-                            <option>Elementary</option>
-                            <option>Junior High</option>
-                            <option>Senior High</option>
-                            <option>College</option>
+                            <option hidden>Please Select...</option>
+                            <option value="">Elementary</option>
+                            <option value="">Junior High</option>
+                            <option value="">Senior High</option>
+                            <option value="">College</option>
                         </select>
                     </div>
+                    </form>
                 </div>
                 <button class="button-primary" type="button" style="margin: 20px auto 0; display: block;">Register</button>
             </div>
