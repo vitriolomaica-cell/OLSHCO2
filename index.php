@@ -1,14 +1,16 @@
 <?php
-require_once __DIR__ . '/config/dbconnect.php';
+    session_start();
 
-$role = $_SESSION['role'] ?? 'faculty';
+    require_once __DIR__ . '/config/dbconnect.php';
 
-$page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
-$allowed = ['auth', 'dashboard', 'posting', 'calendar', 'events', 'contacts', 'academic_offerings', 'testing'];
+    $role = $_SESSION['role'] ?? 'Student';   
 
-if (!in_array($page, $allowed, true)) {
-    $page = 'auth';
-}
+    $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
+    $allowed = ['auth', 'dashboard', 'posting', 'calendar', 'events', 'contacts', 'academic_offerings', 'testing'];
+
+    if (!in_array($page, $allowed, true)) {
+        $page = 'auth';
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -11,23 +11,19 @@
         ],
         'calendar' => [
             'label' => 'Calendar',
-            'roles' => ['student', 'faculty', 'admin']
+            'roles' => ['Student', 'faculty', 'admin']
         ],
         'events' => [
             'label' => 'Events',
-            'roles' => ['student', 'faculty', 'admin']
+            'roles' => ['Student', 'faculty', 'admin']
         ],
         'academic_offerings' => [
             'label' => 'Academic Offerings',
-            'roles' => ['student', 'faculty', 'admin']
+            'roles' => ['Student', 'faculty', 'admin']
         ],
         'contacts' => [
             'label' => 'Contacts',
-            'roles' => ['student', 'faculty', 'admin']
-        ],
-        'auth' => [ 
-            'label' => 'Auth',
-            'roles' => ['student', 'faculty', 'admin']
+            'roles' => ['Student', 'faculty', 'admin']
         ],
     ];
 

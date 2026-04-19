@@ -10,12 +10,12 @@
         $lname = $_POST['last_name'];
         $email = $_POST['email'];
         $gender = $_POST['gender'];
-        $dept = $_POST['deptartment'];
-        $studID = $_POST['studID'];
+        $dept = $_POST['department'];
+        $studID = $_POST['studentID'];
 
-        $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+        $pass = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-        $role_prefix = "STU";
+        $role_prefix = "Student";
 
         $stmtRole = 
             $conn->prepare(
@@ -31,25 +31,31 @@
         $resultRole = $stmtRole->get_result();
         $roleRow = $resultRole->fetch_assoc();
 
-        $role_id = $roleRow['role_id'];
+        if ($roleRow) {
+            $_SESSION['role_id'] = $row['role_id'];
+            $_SESSION['role'] = $row['role_prefix'];
+        } else {
+            die("Role not found");
+        }
 
         $stmt = $conn->prepare(
             "INSERT INTO user
-            (first_name, middle_name, last_name,
-            email, gender, role_id, 
-            department_id, created_at)
-            
-            VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
-            "
+            (studID, first_name, middle_name, last_name,
+            email, password, gender,
+            role_id, department_id, created_at)
+
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, NOW())"
         );
 
         $stmt->bind_param(
-            "sssssii",
+            "sssssssii",
+            $studID,
             $fname,
             $mname,
             $lname,
             $email,
-            $sex,
+            $pass,
+            $gender,
             $role_id,
             $dept
         );

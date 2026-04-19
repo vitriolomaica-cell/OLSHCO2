@@ -12,13 +12,13 @@
 
     <div class="siginup-card">
         <h1>Sign up niggers</h1>
-        <form action="" method="POST">
+        <form action="../config/authentication.php" method="POST">
             <input type="text" name="first_name" placeholder="first name">
             <input type="text" name="middle_name" placeholder="middle name">
             <input type="text" name="last_name" placeholder="last name">
             <input type="text" name="email" placeholder="email">
 
-            <input type="text" name="studId" placeholder="student ID">
+            <input type="text" name="studentID" placeholder="student ID">
             
             <div>
             <label for="sex">Sex</label>
@@ -31,7 +31,7 @@
 
             <div>
             <label for="dept">Department</label>
-            <select name="deptartment" id="dept">
+            <select name="department" id="dept">
                 <option hidden>Please select</option>
                 <option value="1">Elementary</option>
                 <option value="2">Junior High</option>
@@ -39,6 +39,8 @@
                 <option value="4">Collage</option>
             </select>
             </div>
+
+            <input type="text" name="password" placeholder="password">
 
             <button type="submit" name="signup">Submit</button>
         </form>
