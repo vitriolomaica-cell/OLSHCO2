@@ -279,7 +279,7 @@ button, input, select, textarea {
 .page-section {
     display: grid;
     gap: 18px;
-    padding: 24px;
+    padding: 58px;
     border-radius: 28px;
     background: var(--panel);
     box-shadow: var(--shadow);
@@ -1264,9 +1264,10 @@ body.dark .posting-content::-webkit-scrollbar-thumb {
 .secondary-card {
     border-radius: 24px;
     background: rgba(255,255,255,0.78);
-    padding: 20px;
+    padding: 30px;
     border: 1px solid var(--border);
     box-shadow: var(--shadow);
+    padding-bottom: 30px;
 }
 
 .event-card h4,
@@ -1325,7 +1326,7 @@ body.dark .posting-content::-webkit-scrollbar-thumb {
 .feature-grid,
 .contact-grid {
     display: grid;
-    gap: 18px;
+    gap: 20px;
 }
 
 .offer-grid {
@@ -1449,5 +1450,269 @@ body.dark .posting-content::-webkit-scrollbar-thumb {
 
     .topbar {
         border-radius: 20px;
+    }
+}
+
+/* Posting Form Styles */
+.posting-main-container {
+    display: grid;
+    gap: 24px;
+}
+
+.create-post-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.create-post-form {
+    background: rgba(255,255,255,0.88);
+    border-radius: 28px;
+    padding: 36px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.form-header .calendar-icon {
+    width: 28px;
+    height: 28px;
+    color: var(--accent-strong);
+}
+
+.form-header h3 {
+    margin: 0;
+    font-size: 1.35rem;
+    color: var(--text);
+}
+
+.posting-form {
+    display: grid;
+    gap: 18px;
+}
+
+.form-group {
+    display: grid;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.95);
+    border-radius: 14px;
+    padding: 14px 16px;
+    color: var(--text);
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: var(--accent-strong);
+    box-shadow: 0 0 0 3px rgba(163, 27, 31, 0.1);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: 'Mona Sans', sans-serif;
+}
+
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23280c0f' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+}
+
+.file-upload-area {
+    position: relative;
+    border: 2px dashed var(--border);
+    border-radius: 14px;
+    padding: 28px 16px;
+    background: rgba(255,214,87,0.08);
+    text-align: center;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.file-upload-area:hover {
+    border-color: var(--accent-strong);
+    background: rgba(163, 27, 31, 0.08);
+}
+
+.file-upload-label {
+    display: block;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.browse-link {
+    color: var(--accent-strong);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.browse-link:hover {
+    text-decoration: underline;
+}
+
+.btn-publish {
+    width: 100%;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 18px;
+    background: var(--accent-strong);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 8px;
+}
+
+.btn-publish:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(163, 27, 31, 0.3);
+}
+
+.btn-publish:active {
+    transform: translateY(0);
+}
+
+.recent-posts-container {
+    background: rgba(255,255,255,0.88);
+    border-radius: 28px;
+    padding: 28px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    display: grid;
+    gap: 16px;
+}
+
+.recent-posts-title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text);
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+.recent-post-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    align-items: start;
+    padding: 16px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.5);
+    border: 1px solid var(--border);
+    transition: background-color 0.2s ease;
+}
+
+.recent-post-item:hover {
+    background: rgba(255,255,255,0.7);
+}
+
+.post-type-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.post-type-badge.pdf {
+    background: #eb4335;
+}
+
+.post-type-badge.docx {
+    background: #4285f4;
+}
+
+.post-type-badge.xlsx {
+    background: #34a853;
+}
+
+.post-details {
+    display: grid;
+    gap: 6px;
+}
+
+.post-details h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.post-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.post-date {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-weight: 500;
+}
+
+.post-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.action-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255,214,87,0.15);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.action-btn:hover {
+    background: rgba(255,214,87,0.3);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 1300px) {
+    .create-post-form-container {
+        grid-template-columns: 1fr;
     }
 }

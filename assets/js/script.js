@@ -41,15 +41,55 @@ function updatePageSwitch(isDark) {
     }
 }
 
+// Handle posting tabs
 const postingTabs = document.querySelectorAll('.posting-tab');
-const viewSections = document.querySelectorAll('.view-section');
-postingTabs.forEach((tab, index) => {
+postingTabs.forEach((tab) => {
     tab.addEventListener('click', () => {
         postingTabs.forEach(t => t.classList.remove('active'));
-        viewSections.forEach(section => section.classList.remove('active'));
         tab.classList.add('active');
-        if (viewSections[index]) {
-            viewSections[index].classList.add('active');
-        }
     });
 });
+
+// Handle posting form submission
+const postingForm = document.querySelector('.posting-form');
+if (postingForm) {
+    postingForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const title = document.getElementById('post-title').value;
+        const category = document.getElementById('post-category').value;
+        const content = document.getElementById('post-content').value;
+        
+        if (title.trim() && content.trim()) {
+            alert(`Post published!\nTitle: ${title}\nCategory: ${category}`);
+            postingForm.reset();
+        } else {
+            alert('Please fill in both title and content.');
+        }
+    });
+}
+
+// Handle file upload
+const fileInput = document.getElementById('post-file');
+const fileUploadArea = document.querySelector('.file-upload-area');
+if (fileUploadArea) {
+    fileUploadArea.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        fileUploadArea.style.borderColor = 'var(--accent-strong)';
+        fileUploadArea.style.backgroundColor = 'rgba(163, 27, 31, 0.12)';
+    });
+    
+    fileUploadArea.addEventListener('dragleave', () => {
+        fileUploadArea.style.borderColor = 'var(--border)';
+        fileUploadArea.style.backgroundColor = 'rgba(255,214,87,0.08)';
+    });
+    
+    fileUploadArea.addEventListener('drop', (e) => {
+        e.preventDefault();
+        fileUploadArea.style.borderColor = 'var(--border)';
+        fileUploadArea.style.backgroundColor = 'rgba(255,214,87,0.08)';
+        
+        if (e.dataTransfer.files.length > 0) {
+            fileInput.files = e.dataTransfer.files;
+        }
+    });
+}

@@ -1,10 +1,10 @@
 <?php
 $currentPage = $page ?? 'dashboard';
 $nav = [
-    'Dashboard',
-    'posting' => 'Announcements & Events',
+    'dashboard' => 'Dashboard',
+    'posting' => 'Posting',
     'calendar' => 'Calendar',
-    'events' => 'Posting',
+    'events' => 'Events',
     'academic_offerings' => 'Academic Offerings',
     'contacts' => 'Contacts',
 ];

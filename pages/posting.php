@@ -14,121 +14,131 @@
             <button class="posting-tab active">Announcement</button>
             <button class="posting-tab">Events</button>
         </div>
-        <button class="button-primary new-post-btn">New Post</button>
+        <button class="button-primary new-post-btn">+ New Post</button>
     </div>
 
     <div class="posting-content">
-        <div class="posting-filters">
-            <span class="filter-label">Departmental</span>
-        </div>
+        <div class="posting-main-container">
+            <!-- Create New Post Form -->
+            <div class="create-post-form-container">
+                <div class="create-post-form">
+                    <div class="form-header">
+                        <svg class="calendar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <h3>Create New Post</h3>
+                    </div>
 
-        <div class="view-section announcement-view">
-            <div class="announcement-page">
-                <div class="announcement-heading">
-                    <h1>ANNOUNCEMENTS</h1>
+                    <form class="posting-form">
+                        <div class="form-group">
+                            <label for="post-title">Title:</label>
+                            <input type="text" id="post-title" placeholder="" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="post-category">Category:</label>
+                            <select id="post-category" class="form-select">
+                                <option>General Announcement</option>
+                                <option>Academic</option>
+                                <option>Event</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="post-content" placeholder="Enter Post Content..." class="form-textarea"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="file-upload-area">
+                                <input type="file" id="post-file" hidden>
+                                <label for="post-file" class="file-upload-label">
+                                    Drag & Drop Image here or <span class="browse-link">Browse Files</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-publish">Publish Announcement</button>
+                    </form>
                 </div>
-                <div class="announcement-grid announcement-highlight-grid">
-                    <article class="announcement-card">
-                        <div class="announcement-image">
-                            <img src="assets/images/elementary.jpg" alt="Preschool & Grade School" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+
+                <!-- Recent Document Posts -->
+                <div class="recent-posts-container">
+                    <h3 class="recent-posts-title">Recent Document Posts</h3>
+
+                    <div class="recent-post-item">
+                        <div class="post-type-badge pdf">PDF</div>
+                        <div class="post-details">
+                            <h4>Parental Consent Form</h4>
+                            <p>Form that parents/guardians must sign to allow their child to participate in a school activity.</p>
+                            <span class="post-date">34 mins ago</span>
                         </div>
-                        <div class="announcement-copy">
-                            <h3>Preschool & Grade School</h3>
-                            <p class="announcement-subtitle">Nursery to Grade 6</p>
+                        <div class="post-actions">
+                            <button class="action-btn" title="View">👁️</button>
+                            <button class="action-btn" title="Edit">✏️</button>
+                            <button class="action-btn" title="Delete">🗑️</button>
                         </div>
-                    </article>
-                    <article class="announcement-card">
-                        <div class="announcement-image">
-                            <img src="assets/images/jhs.jpg" alt="Junior High School" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                    </div>
+
+                    <div class="recent-post-item">
+                        <div class="post-type-badge docx">DOCX</div>
+                        <div class="post-details">
+                            <h4>Graduation Guidelines</h4>
+                            <p>Requirements and procedures for graduating students, including eligibility criteria, other infractions, and important...</p>
+                            <span class="post-date">1 day ago</span>
                         </div>
-                        <div class="announcement-copy">
-                            <h3>Junior High School</h3>
-                            <p class="announcement-subtitle">Grade 7 to Grade 10</p>
+                        <div class="post-actions">
+                            <button class="action-btn" title="View">👁️</button>
+                            <button class="action-btn" title="Edit">✏️</button>
+                            <button class="action-btn" title="Delete">🗑️</button>
                         </div>
-                    </article>
-                    <article class="announcement-card">
-                        <div class="announcement-image">
-                            <img src="assets/images/announcement.jpg" alt="Senior High School" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                    </div>
+
+                    <div class="recent-post-item">
+                        <div class="post-type-badge xlsx">XLSX</div>
+                        <div class="post-details">
+                            <h4>Field Trip Waiver Form</h4>
+                            <p>Form that students and parents must sign to acknowledge that the student will be participating in a field trip outside of...</p>
+                            <span class="post-date">3 days ago</span>
                         </div>
-                        <div class="announcement-copy">
-                            <h3>Senior High School</h3>
-                            <p class="announcement-subtitle">Grade 11 to Grade 12<br>[STEM, ABM, HUMSS, TVL-ICT]</p>
+                        <div class="post-actions">
+                            <button class="action-btn" title="View">👁️</button>
+                            <button class="action-btn" title="Edit">✏️</button>
+                            <button class="action-btn" title="Delete">🗑️</button>
                         </div>
-                    </article>
-                    <article class="announcement-card">
-                        <div class="announcement-image">
-                            <img src="assets/images/kaledj.jpg" alt="College" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+                    </div>
+
+                    <div class="recent-post-item">
+                        <div class="post-type-badge xlsx">XLSX</div>
+                        <div class="post-details">
+                            <h4>Updated School Rules & Regulations</h4>
+                            <p>Latest school policies, behavioral guidelines, and disciplinary rules that students are expected to follow during the...</p>
+                            <span class="post-date">3 days ago</span>
                         </div>
-                        <div class="announcement-copy">
-                            <h3>College</h3>
-                            <p class="announcement-subtitle">BEED, BSED, BTLED, BECE, BSCRIM, BSOAD, BSHM, BSIT</p>
+                        <div class="post-actions">
+                            <button class="action-btn" title="View">👁️</button>
+                            <button class="action-btn" title="Edit">✏️</button>
+                            <button class="action-btn" title="Delete">🗑️</button>
                         </div>
-                    </article>
+                    </div>
+
+                    <div class="recent-post-item">
+                        <div class="post-type-badge xlsx">XLSX</div>
+                        <div class="post-details">
+                            <h4>Quarterly Exam Schedule</h4>
+                            <p>Official schedule for quarterly examinations, including exam dates, subjects, and assigned time slots for each section.</p>
+                            <span class="post-date">1 week ago</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn" title="View">👁️</button>
+                            <button class="action-btn" title="Edit">✏️</button>
+                            <button class="action-btn" title="Delete">🗑️</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="view-section event-view active">
-            <div class="announcement-grid event-grid">
-                <article class="announcement-card">
-                    <div class="announcement-image">
-                        <img src="assets/images/elementary.jpg" alt="Elementary Announcements" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
-                    </div>
-                    <div style="background: rgba(76, 7, 7, 0.95); padding: 12px 16px; border-radius: 12px; margin: 12px; text-align: center;">
-                        <h3 style="color: #fff; font-size: 1.1rem; margin: 0;">Elementary Announcements</h3>
-                    </div>
-                    <button class="see-details-btn">See Details</button>
-                </article>
-                <article class="announcement-card">
-                    <div class="announcement-image">
-                        <img src="assets/images/jhs.jpg" alt="Junior High Announcements" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
-                    </div>
-                    <div style="background: rgba(76, 7, 7, 0.95); padding: 12px 16px; border-radius: 12px; margin: 12px; text-align: center;">
-                        <h3 style="color: #fff; font-size: 1.1rem; margin: 0;">Junior High Announcements</h3>
-                    </div>
-                    <button class="see-details-btn">See Details</button>
-                </article>
-                <article class="announcement-card">
-                    <div class="announcement-image">
-                        <img src="assets/images/announcement.jpg" alt="Senior High Announcements" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
-                    </div>
-                    <div style="background: rgba(76, 7, 7, 0.95); padding: 12px 16px; border-radius: 12px; margin: 12px; text-align: center;">
-                        <h3 style="color: #fff; font-size: 1.1rem; margin: 0;">Senior High Announcements</h3>
-                    </div>
-                    <button class="see-details-btn">See Details</button>
-                </article>
-                <article class="announcement-card">
-                    <div class="announcement-image">
-                        <img src="assets/images/kaledj.jpg" alt="College Announcements" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
-                    </div>
-                    <div style="background: rgba(76, 7, 7, 0.95); padding: 12px 16px; border-radius: 12px; margin: 12px; text-align: center;">
-                        <h3 style="color: #fff; font-size: 1.1rem; margin: 0;">College Announcements</h3>
-                    </div>
-                    <button class="see-details-btn">See Details</button>
-                </article>
-            </div>
-
-            <div class="announcement-section-divider">
-                <span class="filter-label">Event Highlights</span>
-            </div>
-
-            <div class="announcement-posts-grid">
-                <article class="announcement-post">
-                    <h4>First Friday Mass</h4>
-                    <p class="post-meta">April 3, 2026 - 7:30 am</p>
-                    <div class="post-image">
-                        <img src="assets/images/mass.jpg" alt="First Friday Mass" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
-                    </div>
-                    <button class="see-details-btn">See Details</button>
-                </article>
-                <article class="announcement-post">
-                    <h4>Student Achievement Day</h4>
-                    <p class="post-meta">March 26, 2026</p>
-                    <div class="post-image">
-                        <img src="assets/images/crim.jpg" alt="Student Achievement Day" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
-                    </div>
-                    <button class="see-details-btn">See Details</button>
-                </article>
             </div>
         </div>
     </div>
