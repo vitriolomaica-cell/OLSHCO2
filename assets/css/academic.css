@@ -1,0 +1,180 @@
+.academic-offerings-page {
+    display: grid;
+    gap: 34px;
+    padding: 40px 32px;
+    background: none;
+    box-shadow: none;
+    border: none;
+    min-height: 100%;
+}
+
+.academic-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.academic-heading h1 {
+    margin: 0;
+    padding: 18px 80px;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 999px;
+    background: rgba(255,255,255,0.14);
+    color: #fff;
+    font-size: clamp(2.8rem, 4vw, 4.8rem);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+
+.academic-grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.academic-card {
+    display: grid;
+    gap: 12px;
+    border-radius: 32px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.28);
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.16);
+}
+
+.academic-card .card-image {
+    min-height: 280px;
+    background: rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.14);
+}
+
+.academic-card .card-copy {
+    display: grid;
+    gap: 8px;
+    padding: 22px 24px 26px;
+    background: rgba(89, 0, 0, 0.9);
+}
+
+.academic-card .card-copy h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.45rem;
+    font-weight: 800;
+}
+
+.academic-card .card-copy .card-subtitle {
+    margin: 0;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+
+.academic-hero {
+    padding: 36px;
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(18px);
+    position: relative;
+}
+
+.hero-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 34px;
+}
+
+.hero-copy {
+    display: grid;
+    gap: 12px;
+}
+
+.hero-kicker {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent-strong);
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.academic-hero h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin: 0;
+    color: rgba(43, 13, 21, 0.96);
+}
+
+.offer-grid,
+.feature-grid,
+.contact-grid {
+    display: grid;
+    gap: 18px;
+}
+
+.offer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.hero-card {
+    min-height: 280px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(0,0,0,0.22);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 22px 44px rgba(0,0,0,0.12);
+}
+
+.hero-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    filter: blur(1px);
+}
+
+.hero-card-1::before { background-image: url('../images/hero-1.jpg'); }
+.hero-card-2::before { background-image: url('../images/hero-2.jpg'); }
+.hero-card-3::before { background-image: url('../images/hero-3.jpg'); }
+.hero-card-4::before { background-image: url('../images/hero-4.jpg'); }
+.hero-card-5::before { background-image: url('../images/hero-5.jpg'); }
+
+.card-content {
+    position: relative;
+    z-index: 1;
+    padding: 24px;
+    display: grid;
+    gap: 16px;
+}
+
+.hero-card h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.hero-card p {
+    color: rgba(255,255,255,0.88);
+    line-height: 1.6;
+}
+
+.hero-card .subtitle {
+    color: rgba(255,255,255,0.75);
+}

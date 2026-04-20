@@ -19,13 +19,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OLSHCO Digital Hub</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+
+    <?php if ($page === 'auth'): ?>
+
     <link rel="stylesheet" href="assets/css/auth.css">
+
+    <?php else: ?>
+
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+
+    <?php
+        if ($page === 'calendar')
+            echo '<link rel="stylesheet" href="assets/css/calendar.css">';
+
+        if ($page === 'posting')
+            echo '<link rel="stylesheet" href="assets/css/posting.css">';
+
+        if ($page === 'academic_offerings')
+            echo '<link rel="stylesheet" href="assets/css/academic.css">';
+    ?>
+
+    <?php endif; ?>
+
     <link href="https://github.githubassets.com/assets/mona-sans-c6a8f8da.woff2" rel="preload" as="font" type="font/woff2" crossOrigin="anonymous">
 </head>
 
 <body>
-    <div class="app-shell">
+    <div class="app-shell <?= ($page === 'auth') ? 'no-sidebar' : '' ?>">
         <?php if ($page != 'auth'):?>
             <?php include __DIR__ . '/includes/sidebar.php'; ?>
         <?php endif; ?>
