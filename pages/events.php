@@ -1,3 +1,4 @@
+<?php if ($role === 'Admin' || $role === 'Faculty'): ?>
 <section class="page-section">
     <div class="card">
         <h2>Latest Events</h2>
@@ -32,3 +33,19 @@
         </div>
     </div>
 </section>
+<?php endif; ?>
+
+<?php if ($role === 'Student'): ?>
+<section class="page-section">
+    <div class="card">
+        <h2>Upcoming Events</h2>
+        <p class="subtitle">Stay updated with school activities.</p>
+
+        <div class="event-list">
+            <div class="event-pill"><strong>Moving Up and Graduation Ceremonies 2026</strong><span>March 27, 2026</span></div>
+            <div class="event-pill"><strong>Students' Achievement Day</strong><span>March 26, 2026</span></div>
+            <div class="event-pill"><strong>Commencement Exercises 2026</strong><span>March 28, 2026</span></div>
+        </div>
+    </div>
+</section>
+<?php endif; ?>

@@ -3,6 +3,17 @@
 
     require_once __DIR__ . '/config/dbconnect.php';
 
+    // Debug only
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['roleSelect'])) {
+        $_SESSION['role'] = $_POST['roleSelect'];
+
+        // Prevent form resubmission on refresh
+
+        header("Location: index.php?page=" . ($_GET['page'] ?? 'dashboard'));
+        exit;
+    }
+    // Debug only
+
     $role = $_SESSION['role'] ?? 'Student';   
 
     $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';

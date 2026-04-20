@@ -1,3 +1,5 @@
+@import url('root.css');
+
 .academic-offerings-page {
     display: grid;
     gap: 34px;

@@ -1,3 +1,5 @@
+@import url('root.css');
+
 .grid-2 {
     display: grid;
     gap: 20px;

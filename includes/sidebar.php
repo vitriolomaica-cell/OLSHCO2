@@ -3,27 +3,27 @@
     $nav = [
         'dashboard' => [
             'label' => 'Dashboard',
-            'roles' => ['faculty', 'admin']
+            'roles' => ['Faculty', 'Admin']
         ],
         'posting' => [
             'label' => 'Posting',
-            'roles' => ['faculty', 'admin']
+            'roles' => ['Faculty', 'Admin']
         ],
         'calendar' => [
             'label' => 'Calendar',
-            'roles' => ['Student', 'faculty', 'admin']
+            'roles' => ['Student', 'Faculty', 'Admin']
         ],
         'events' => [
             'label' => 'Events',
-            'roles' => ['Student', 'faculty', 'admin']
+            'roles' => ['Student', 'Faculty', 'Admin']
         ],
         'academic_offerings' => [
             'label' => 'Academic Offerings',
-            'roles' => ['Student', 'faculty', 'admin']
+            'roles' => ['Student', 'Faculty', 'Admin']
         ],
         'contacts' => [
             'label' => 'Contacts',
-            'roles' => ['Student', 'faculty', 'admin']
+            'roles' => ['Student', 'Faculty', 'Admin']
         ],
     ];
 
@@ -53,4 +53,13 @@
         </div>
         <button id="themeToggle" class="theme-toggle" type="button">Dark Mode</button>
     </div>
+    <form method="POST">
+        <div class="select-role">
+            <select name="roleSelect" onchange="this.form.submit()">
+                <option value="Student" <?= $role === 'Student' ? 'selected' : '' ?>>Student</option>
+                <option value="Faculty" <?= $role === 'Faculty' ? 'selected' : '' ?>>Faculty</option>
+                <option value="Admin" <?= $role === 'Admin' ? 'selected' : '' ?>>Admin</option>
+            </select>
+        </div>
+    </form>
 </aside>
