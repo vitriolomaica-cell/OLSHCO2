@@ -26,7 +26,9 @@
 
 <body>
     <div class="app-shell">
-        <?php include __DIR__ . '/includes/sidebar.php'; ?>
+        <?php if ($page != 'auth'):?>
+            <?php include __DIR__ . '/includes/sidebar.php'; ?>
+        <?php endif; ?>
         <div class="main-panel">
             <main class="page-content">
                 <?php include __DIR__ . '/pages/' . $page . '.php'; ?>

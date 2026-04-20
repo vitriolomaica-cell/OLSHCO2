@@ -2,7 +2,9 @@
 
     session_start();
     require_once "dbconnect.php";
+    require_once "logging.php";
 
+    // REGISTER //
     if (isset($_POST['signup'])) {
 
         $fname = $_POST['first_name'];
@@ -65,11 +67,59 @@
 
             $_SESSION['role_id'] = $role_id;
 
+            logActivity(
+                $conn,
+                "SIGNUP",
+                "New user registered"
+            );
+
             header("Location: ../index.php");
             exit();
         } else {
             echo "sign up failed";
         }
     }
+
+    // LOGIN //
+
+    if (isset($_POST['signIn'])) {
+
+        $studID = $_POST['studentID'];
+        $pass = $_POST['password'];
+
+        $stmt = $conn->prepare(
+            "SELECT * FROM user
+             WHERE studID = ?"
+        );
+
+        $stmt->bind_param("s", $studID);
+        $stmt->execute();
+
+        $result = $stmt->get_result();
+
+        if ($row = $result->fetch_assoc()) {
+
+            if (password_verify($pass, $row['password'])) {
+
+                $_SESSION['user_id'] = $row['user_id'];
+                $_SESSION['role_id'] = $row['role_id'];
+
+                logActivity(
+                    $conn,
+                    "LOGIN",
+                    $_SESSION['name'] . " logged in"
+                );
+
+                header("Location: ../index.php");
+                exit();
+
+            } else {
+                echo "Wrong password";
+            }
+        } else {
+            echo "User not found";
+        }
+    }
+
 
 ?>

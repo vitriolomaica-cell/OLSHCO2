@@ -2,8 +2,8 @@
     <div class="signin-card">
         <h1>Sign In negros</h1>
         <form action="" method="POST">
-            <input type="text" name="studID" placeholder="student ID">
-            <input type="password" name="pass" placeholder="password dito tanginamo">
+            <input type="text" name="studENTid" placeholder="student ID">
+            <input type="password" name="password" placeholder="password dito tanginamo">
             <button name="signIn">Submit</button>
         </form>
     </div>
