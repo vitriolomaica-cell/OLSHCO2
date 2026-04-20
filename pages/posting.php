@@ -11,10 +11,12 @@
 
     <div class="posting-tabs-row">
         <div class="posting-tabs">
-            <button class="posting-tab active">Announcement</button>
-            <button class="posting-tab">Events</button>
+            <button class="posting-tab">Announcement</button>
+            <button class="posting-tab active">Events</button>
         </div>
-        <button class="button-primary new-post-btn">New Post</button>
+        <?php if ($role != 'Student'): ?>
+            <button class="button-primary new-post-btn">New Post</button>
+        <?php endif; ?>
     </div>
 
     <div class="posting-content">

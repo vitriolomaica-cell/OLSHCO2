@@ -6,16 +6,16 @@
             'roles' => ['Faculty', 'Admin']
         ],
         'posting' => [
-            'label' => 'Posting',
-            'roles' => ['Faculty', 'Admin']
+            'label' => 'Announcement & Events',
+            'roles' => ['Student', 'Faculty', 'Admin']
         ],
         'calendar' => [
             'label' => 'Calendar',
             'roles' => ['Student', 'Faculty', 'Admin']
         ],
         'events' => [
-            'label' => 'Events',
-            'roles' => ['Student', 'Faculty', 'Admin']
+            'label' => 'Posting',
+            'roles' => ['Faculty', 'Admin']
         ],
         'academic_offerings' => [
             'label' => 'Academic Offerings',
